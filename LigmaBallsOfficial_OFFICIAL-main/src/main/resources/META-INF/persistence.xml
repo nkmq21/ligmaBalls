@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+  <!-- Define Persistence Unit -->
+  <persistence-unit name="ligmaBallsPU">
+    <class>model.Categories</class>
+    <class>model.Users</class>
+    <class>model.Orderdetails</class>
+    <class>model.Productviews</class>
+    <class>model.Company</class>
+    <class>model.Colors</class>
+    <class>model.Sizes</class>
+    <class>model.Productimages</class>
+    <class>model.Voucher</class>
+    <class>model.Inventory</class>
+    <class>model.Orderstatus</class>
+    <class>model.ShippingCompanies</class>
+    <class>model.Products</class>
+    <class>model.Cartitems</class>
+    <class>model.PaymentMethods</class>
+    <class>model.Reviews</class>
+    <class>model.Cart</class>
+    <class>model.ProductCategories</class>
+    <class>model.Productsizecolor</class>
+    <class>model.Shipping</class>
+    <class>model.Orders</class>
+    <properties>
+        <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlserver://ligmashopprj.database.windows.net:1433;database=LigmaShop;user=nkmq21@ligmashopprj;password=268405Duy!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;"/>
+        <property name="jakarta.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <property name="jakarta.persistence.jdbc.user" value="nkmq21@ligmashopprj"/>
+        <property name="jakarta.persistence.jdbc.password" value="268405Duy!"/>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+        <property name="hibernate.hbm2ddl.auto" value="update"/>
+        <property name="hibernate.show_sql" value="true"/>
+        <property name="hibernate.format_sql" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
